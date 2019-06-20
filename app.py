@@ -26,13 +26,6 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 
 
-"""
-Index(['Temperature (C)', 'Humidity', 'Wind Speed (km/h)',
-       'Wind Bearing (degrees)', 'Visibility (km)', 'Pressure (millibars)',
-       'Summary'],
-"""
-
-
 
 
 
