@@ -29,7 +29,7 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 
 
-@app.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST','GET'])
 def predict():
 	return "blo"
 
