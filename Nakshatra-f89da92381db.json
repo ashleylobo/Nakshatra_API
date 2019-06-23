@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "nakshatra-244309",
+  "private_key_id": "f89da92381dbe683b630130cd06970313adc32eb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQChHvpAPl/9Q0Yy\nUiyO5ZEgp5o4/rRttOxJDO/OPG7exfjSmWvSpUwTviBOmSAu6Jq4N/TsEj/y4UCX\nRZ0lwT0LMjWMgVhWvCJEIQ1PTCCQwmbG4zj4U0pdyq44oDaeqObuHQaiaACAog20\nN0+4rO8o/wkPFaVealV+crVQDyiee548sb4a+yy7xieqmyVH4l0YbuZZxAi7y9gX\n/+pst3nAqBY3dYLf6PCYfY8PYCTMcgrJxuZkIMFEkeqXaWOjwV6Zo6W5c9NbZ03G\nYxjRJcIRpVJkfwGPzuEklnRQyDZZTVKq87LPJJm/75tQuspGXpcK892roKslt2CV\nIU3F3EZJAgMBAAECggEARKuLRS5QgwTVOkVDsHOvcxd756bHB6sAufHFk0S2jEQc\nVMYG6nSBBDkYU+d3jAafSryuqp7smnvep5qH67t8ZPU1VXkbSXxNrnPX1GBB0PDK\nFSJq+YumOmtT7dZ68QxTwFCmrzlcXXa0GIcqdy9djz+DgOZc4Oy5G3eQR1rumPyx\nxVVxUY//QNcFDwneJpMrE78/1OUEdbmQMKi81XkadQItMmuY5nXONdBHbLxhO7UW\nnASIribX+ouUvgCjUQKY6HXLn3bkpzgqw7WtcvmIcSsi1P1NuhMNSEQjVnOnZ5Oi\ng4dPIqJ0ITLsms1tMLrs9v95YOioAP08QRQoJPexcQKBgQDN8egl4I+7qrlyoXti\nw7WTr8FIDJPAfgOkKLQaj1LPNx8S44x/c/9b44GuJRdHNVScrALBq5Jv9ogonwxS\niVuL0/kp9LNKVJrKrb4nTUPFpzfDqFqO2NZ7hx1nGqh17zLtp5RrO/iTlOJe2JWD\nI4kPYk4QC6/rdaFMOGQasqDSSwKBgQDISBTxubq7E47xw155mDdUb3BmNa50gIWu\n6QTJdzPojCHd7brv+P5l279zZqzk2Sfk0A3JtH2w3a2GySHZG4RFRXnoWGW56YlL\nl+zltFtyjDI0Stw9H3IK0DwNXvkYL8j9PC3fn+pNn2JPAPGfk/ebze1lzIA6ve67\nQZHkbZoNOwKBgQCzrjqISYu+Ba81FzTKr8wNZYtx7B9BE/DjWewBPEjYp9QBq+ya\nCr+iETXElXHg2+PNqbnh9WqXKvYS0ulyXYs0zSWX+HoxAO3opXvBWIUnvsRFfe48\nsW04a2M44KZX9vFtLgetI662PHDgpYCU4P0lIfTPxRKgkYnAMXcNYAo2TwKBgQCd\nyBun63fuVZQxZoaRKJe+TySvgO71HSM0DqMUzHH6bBtqKRUyZGiWei4zjdn7WBCT\ntEyIcUbsBVflbaLa1VC4+ej2YF2TvyXIheG9fP7mGQicJbWn+ZPwbOhCaGW45jxj\nM/u3xtXhXQUn1EiGPR2+gtbZceg7XtIqd5el66qHbQKBgQCzUlnbX4+i8Ac4vsmK\nK1kJpc50bmAdtFP6zCPBVR4MU2j2/z0mOH5NNNCLQBw70kbjNioxf982mHvHAckw\nYwX93KS5yFmjVtTWQEn90t2CyM8xsnKvINQd8xIKUqWXJJ57w0lBSJz4U2vdy435\nxGL/uKT4ASTmI5sAIzdzKcuSbQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "nakshatra@nakshatra-244309.iam.gserviceaccount.com",
+  "client_id": "104361602737969189298",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/nakshatra%40nakshatra-244309.iam.gserviceaccount.com"
+}
