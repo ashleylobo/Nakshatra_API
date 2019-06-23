@@ -17,3 +17,4 @@ def csvToJson():
     for i in range(0,59):
         l.append(telemedicine[i])
     return l
+print(str(csvToJson()))
