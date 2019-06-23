@@ -7,7 +7,7 @@ from flask_cors import CORS, cross_origin
 import requests, json
 import pandas as pd
 import requests
-import main
+
 
 
 
