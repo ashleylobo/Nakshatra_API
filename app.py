@@ -29,9 +29,9 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 
 
-@app.route('/getValues', methods=['POST','GET'])
+@app.route('/getValues', methods=['GET'])
 def predict():
-	return main.csvToJson()
+	return "bla"
 
 
 
