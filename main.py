@@ -14,7 +14,7 @@ telemedicine = sheet.get_all_records()
 pp = pprint.PrettyPrinter()
 def csvToJson():
     l=[]
-    for i in range(0,59):
+    for i in range(0,55):
         l.append(telemedicine[i])
     return l
 print(str(csvToJson()))
