@@ -7,7 +7,7 @@ from flask_cors import CORS, cross_origin
 import requests, json
 import pandas as pd
 import requests
-import main as m
+
 
 
 
@@ -31,6 +31,7 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/getValues', methods=['GET'])
 def predict():
+    import main as m
     return jsonify(m.csvToJson())
 
 
