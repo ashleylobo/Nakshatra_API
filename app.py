@@ -30,13 +30,13 @@ creds = ServiceAccountCredentials.from_json_keyfile_name('Nakshatra-f89da92381db
 
 
 
-
+client = gspread.authorize(creds)
 
 
 
 @app.route('/getValues', methods=['GET'])
 def predict():
-    client = gspread.authorize(creds)
+
     sheet = client.open('Nakshtra 0.4').sheet1
     telemedicine = sheet.get_all_records()
     data={}
