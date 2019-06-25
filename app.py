@@ -10,7 +10,8 @@ import requests
 
 
 
-
+import gspread
+from oauth2client.service_account import ServiceAccountCredentials
 
 
 
@@ -22,6 +23,10 @@ app.secret_key = 'super secret key'
 cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 
+scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
+
+creds = ServiceAccountCredentials.from_json_keyfile_name('Nakshatra-f89da92381db.json', scope)
+
 
 
 
@@ -31,8 +36,16 @@ cors = CORS(app, resources={r"/*": {"origins": "*"}})
 
 @app.route('/getValues', methods=['GET'])
 def predict():
-    import main as m
-    return jsonify(m.csvToJson())
+    client = gspread.authorize(creds)
+    sheet = client.open('Nakshtra 0.4').sheet1
+    telemedicine = sheet.get_all_records()
+    data={}
+    for i in range(1,len(telemedicine)):
+        if(telemedicine[i]['Value_0'] in data.keys()):
+            data[telemedicine[i]['Value_0']].append(telemedicine[i])
+        else:
+            data[telemedicine[i]['Value_0']]=[telemedicine[i]]
+    return jsonify(data)
 
 
 @app.route('/', methods=['GET'])
