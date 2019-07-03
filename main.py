@@ -16,8 +16,17 @@ def csvToJson():
 
     data={}
     for i in range(1,len(telemedicine)):
-        if(telemedicine[i]['Value_0'] in data.keys()):
-            data[telemedicine[i]['Value_0']].append(telemedicine[i])
+        if(telemedicine[i]['nakshtra'] in data.keys()):
+            data[telemedicine[i]['nakshtra']].append(telemedicine[i])
         else:
-            data[telemedicine[i]['Value_0']]=[telemedicine[i]]
+            data[telemedicine[i]['nakshtra']]=[telemedicine[i]]
+    return data
+
+def csvToDay():
+    data={}
+    for i in range(1,len(telemedicine)):
+        if(telemedicine[i]['nakshtra'] in data.keys()):
+            data[telemedicine[i]['nakshtra']].append(telemedicine[i])
+        else:
+            data[telemedicine[i]['nakshtra']]=[telemedicine[i]]
     return data
