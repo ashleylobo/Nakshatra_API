@@ -54,10 +54,25 @@ def predict():
 
 
 @app.route('/getDay', methods=['GET'])
-def home():
-    print("loaded")
-    return "Welcome to My AP"
+def day():
+    client = gspread.authorize(creds)
+    sheet = client.open('Nakshtra 0.4').sheet1
+    telemedicine = sheet.get_all_records()
+    data={}
+    for i in range(1,len(telemedicine)):
+            data[str(telemedicine[i]['gDate'])+"-"+str(telemedicine[i]['gMonth'])+"-"+str(telemedicine[i]['gYear'])]=[telemedicine[i]]
+    return jsonify(data)
 
+
+@app.route('/', methods=['GET'])
+def home():
+    client = gspread.authorize(creds)
+    sheet = client.open('Nakshtra 0.4').sheet1
+    telemedicine = sheet.get_all_records()
+    data={}
+    for i in range(1,len(telemedicine)):
+            data[str(telemedicine[i]['gDate'])+"-"+str(telemedicine[i]['gMonth'])+"-"+str(telemedicine[i]['gYear'])]=[telemedicine[i]]
+    return jsonify(data)
 
 
 
