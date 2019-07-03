@@ -53,7 +53,7 @@ def predict():
     return jsonify(data)
 
 
-@app.route('/', methods=['GET'])
+@app.route('/getDay', methods=['GET'])
 def home():
     print("loaded")
     return "Welcome to My AP"
