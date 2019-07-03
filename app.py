@@ -60,7 +60,7 @@ def day():
     telemedicine = sheet.get_all_records()
     data={}
     for i in range(1,len(telemedicine)):
-            data[str(telemedicine[i]['gDate'])+"-"+str(telemedicine[i]['gMonth'])+"-"+str(telemedicine[i]['gYear'])]=[telemedicine[i]]
+            data[str(telemedicine[i]['gDate'])+"-"+str(telemedicine[i]['gMonth'])+"-"+str(telemedicine[i]['gYear'])]=telemedicine[i]
     return jsonify(data)
 
 
@@ -71,7 +71,7 @@ def home():
     telemedicine = sheet.get_all_records()
     data={}
     for i in range(1,len(telemedicine)):
-            data[str(telemedicine[i]['gDate'])+"-"+str(telemedicine[i]['gMonth'])+"-"+str(telemedicine[i]['gYear'])]=[telemedicine[i]]
+            data[str(telemedicine[i]['gDate'])+"-"+str(telemedicine[i]['gMonth'])+"-"+str(telemedicine[i]['gYear'])]=telemedicine[i]
     return jsonify(data)
 
 
